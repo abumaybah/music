@@ -6,6 +6,7 @@
             <component :is="Component"></component>
         </transition>
     </router-view>
+    <!-- <router-view></router-view> -->
 
     <app-player></app-player>
 
@@ -48,7 +49,7 @@ export default {
 }
 
 .fade-leave-to {
-    transition: all 0.5s linear;
+    transition: all 0s linear;
     opacity: 0;
 }
 </style>
