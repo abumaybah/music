@@ -18,6 +18,10 @@ const auth = firebase.auth();
 const db = firebase.firestore();
 const storage = firebase.storage();
 
+db.enablePersistence().catch((error) => {
+    console.log(`Firabase persistance error ${error}`);
+});
+
 const usersCollection = db.collection('users');
 const songsCollection = db.collection('songs');
 const commentsCollection = db.collection('comments');
